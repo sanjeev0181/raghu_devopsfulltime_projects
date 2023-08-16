@@ -8,10 +8,10 @@ cd /app
 unzip /tmp/catalogue.zip
 cd /app 
 npm install 
-#cp /etc/systemd/system/catalogue.service
+cp /root/raghu_devopsfulltime_projects/shell_script/catalogue.service  /etc/systemd/system/catalogue.service
 systemctl daemon-reload
 systemctl enable catalogue 
 systemctl start catalogue
-#cp /etc/yum.repos.d/mongo.repo
+cp cp /root/raghu_devopsfulltime_projects/shell_script/mongodb-org-5.0.repo  /etc/yum.repos.d/mongodb-org-5.0.repo
 yum install mongodb-org-shell -y
-#mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
+mongo --host 18.223.168.228 </app/schema/catalogue.js
