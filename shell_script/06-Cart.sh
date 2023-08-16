@@ -8,7 +8,7 @@ cd /app
 unzip /tmp/cart.zip
 cd /app 
 npm install 
-#cp /etc/systemd/system/cart.service
+cp /root/raghu_devopsfulltime_projects/shell_script/cart.service /etc/systemd/system/cart.service
 systemctl daemon-reload
 systemctl enable cart 
 systemctl start cart
