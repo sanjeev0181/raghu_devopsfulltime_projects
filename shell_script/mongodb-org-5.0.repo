@@ -1,5 +1,5 @@
 # Import the MongoDB GPG key
-sudo rpm --import https://www.mongodb.org/static/pgp/server-5.0.asc
+#sudo rpm --import https://www.mongodb.org/static/pgp/server-5.0.asc
 
 # Create a repository file for MongoDB
 [mongodb-org-5.0]
