@@ -4,3 +4,8 @@
 * Terraform has a lot of providers. AWS is one of them.
 * Everything is a block in terraform HCL.
 * Ex:- resources,variable,outputs,data,proviser,locals,module.
+
+# Terraform Files
+* All the files of terraform should end with .tf or .tf.json file extension.
+* We can keep multiple files,files will be loaded in terraform in alphabetical order,but it compiles the list and make its own order.
+* Execution order will be smartly picked by terraform , Also gives the flexibility to write your own dependencies (depends_on).
