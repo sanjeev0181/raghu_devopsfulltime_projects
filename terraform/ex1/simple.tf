@@ -6,7 +6,7 @@ data "aws_ami" "ubuntu" {
     values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]  # Update the filter pattern for the desired Ubuntu version
   }
 
-  owners = ["513442679011"]  # Canonical's AWS account ID for official Ubuntu AMIs
+  owners = ["amazon"]  # Canonical's AWS account ID for official Ubuntu AMIs
 }
 
 output "ami" {
