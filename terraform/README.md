@@ -18,3 +18,17 @@
 * PLAN    :- Plan will show what the terraform can do on your code when actually apply.
 * APPLY   :- Create the actual resources.
 * Destroy :- Delete the actual resources which are create. 
+
+# Outputs
+ Syntax :- 
+    url :- # https://www.devopsschool.com/blog/wp-content/uploads/2019/12/terraform-output-variable-740x414.jpg
+           # https://developer.hashicorp.com/terraform/language/values/outputs
+    output "instance_ip_addr" {
+        value = aws_instance.server.private_ip
+    }
+
+* Output prints a message on the screen.
+* Output block helps in printing the created resource attributes & arguments on the screen.
+* Outputs with modules work as a data transmitter.
+* You can define multiple output blocks.
+
