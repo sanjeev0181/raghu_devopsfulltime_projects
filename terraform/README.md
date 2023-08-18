@@ -21,8 +21,7 @@
 
 # Outputs
  Syntax :-
-  
-     url :- # https://www.devopsschool.com/blog/wp-content/uploads/2019/12/terraform-output-variable-740x414.jpg
+    url :- # https://www.devopsschool.com/blog/wp-content/uploads/2019/12/terraform-output-variable-740x414.jpg
            # https://developer.hashicorp.com/terraform/language/values/outputs
 
     output "instance_ip_addr" {
