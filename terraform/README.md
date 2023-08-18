@@ -20,7 +20,8 @@
 * Destroy :- Delete the actual resources which are create. 
 
 # Outputs
- Syntax :- 
+ Syntax :-
+  
      url :- # https://www.devopsschool.com/blog/wp-content/uploads/2019/12/terraform-output-variable-740x414.jpg
            # https://developer.hashicorp.com/terraform/language/values/outputs
 
