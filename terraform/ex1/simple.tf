@@ -1,19 +1,19 @@
-data "aws_ami" "ubuntu" {
-  most_recent = true
+# data "aws_ami" "ubuntu" {
+#   most_recent = true
 
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
-  }
+#   filter {
+#     name   = "name"
+#     values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+#   }
 
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-}
+#   filter {
+#     name   = "virtualization-type"
+#     values = ["hvm"]
+#   }
+# }
 
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.ubuntu.image_id
+  ami           = "ami-053b0d53c279acc90" # data.aws_ami.ubuntu.image_id
   instance_type = "t2.micro"
 
   tags = {
@@ -23,5 +23,5 @@ resource "aws_instance" "web" {
 
 
 output "test" {
-  value = data.aws_ami.ubuntu.image_id
+  value = aws_instance.web.public_ip
 }
