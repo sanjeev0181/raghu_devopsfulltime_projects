@@ -6,12 +6,15 @@ data "aws_ami" "ubuntu" {
     values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]  # Update the filter pattern for the desired Ubuntu version
   }
 
-  owners = ["amazon"]  # Canonical's AWS account ID for official Ubuntu AMIs
+  filter {
+        name = "virtualization - type"
+        values = ["hvm"]
+  }
+
 }
 
-output "ami" {
-  value = data.aws_ami.ubuntu.id
-  
+output "test" {
+  value = data.aws_ami.ubuntu.image_id
 }
 
 # resource "aws_instance" "web" {
