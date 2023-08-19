@@ -17,11 +17,11 @@ output "test" {
   value = data.aws_ami.ubuntu.image_id
 }
 
-# resource "aws_instance" "web" {
-#   ami           = "ami-024e6efaf93d85776"
-#   instance_type = "t2.micro"
+resource "aws_instance" "web" {
+  ami           = data.aws_ami.ubuntu.image_id
+  instance_type = "t2.micro"
 
-#   tags = {
-#     Name = "HelloWorld"
-#   }
-# }
+  tags = {
+    Name = "HelloWorld"
+  }
+}
