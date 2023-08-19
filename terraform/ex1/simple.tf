@@ -12,11 +12,6 @@ data "aws_ami" "ubuntu" {
   }
 }
 
-
-output "test" {
-  value = data.aws_ami.ubuntu.image_id
-}
-
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.image_id
   instance_type = "t2.micro"
@@ -24,4 +19,9 @@ resource "aws_instance" "web" {
   tags = {
     Name = "HelloWorld"
   }
+}
+
+
+output "test" {
+  value = data.aws_ami.ubuntu.image_id
 }
