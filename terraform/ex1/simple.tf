@@ -3,15 +3,15 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]  # Update the filter pattern for the desired Ubuntu version
+    values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
   }
 
   filter {
-        name = "virtualization - type"
-        values = ["hvm"]
+    name   = "virtualization-type"
+    values = ["hvm"]
   }
-
 }
+
 
 output "test" {
   value = data.aws_ami.ubuntu.image_id
