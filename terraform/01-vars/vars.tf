@@ -50,4 +50,4 @@ variable "sample_dict" {
 
 variable "env" {}
 
-variable "prod" {}
+variable "auto_num1" {}
