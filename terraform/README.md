@@ -58,6 +58,8 @@
 
 
 ** Null Resource 
+   
     * that when you are using this Terraform resource, you are not handling a physical resource in the cloud.
 
-    * The null_resource helps us to execute any command remotely or locally to provisioning any resource or even to create a configuration file or perform some command or scripts to change some configuration. There is no limit to what you can do, which is powerful. 
+    * The null_resource helps us to execute any command remotely or locally to provisioning any resource or even to create a configuration file or perform some command or scripts to change some configuration.
+    * There is no limit to what you can do, which is powerful. 
