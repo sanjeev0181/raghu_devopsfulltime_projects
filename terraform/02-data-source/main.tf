@@ -1,4 +1,4 @@
 data "aws_security_group" "selected" {
-    name = "allow_all"
+    name = "launch-wizard-1"
 }
 
