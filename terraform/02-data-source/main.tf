@@ -9,7 +9,7 @@ data "aws_security_groups" "test" {
 #   }
 }
 
-data "aws_security_groups" "single" {
+data "aws_security_group" "single" {
     count = lenght(data.aws_security_groups.single.ids)
     id = data.aws_security_groups.ids[count.index]
 }
