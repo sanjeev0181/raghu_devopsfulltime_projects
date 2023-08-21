@@ -3,9 +3,9 @@
 # }
 
 data "aws_security_groups" "test" {
-  tags = {
-    Application = "k8s"
-    Environment = "dev"
-  }
+#   tags = {
+#     Application = "k8s"
+#     Environment = "dev"
+#   }
 }
 
