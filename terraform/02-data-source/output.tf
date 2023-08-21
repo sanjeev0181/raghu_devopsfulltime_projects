@@ -1,3 +1,3 @@
 output "security_group_id" {
-    value = data.aws_security_group.test
+    value = data.aws_security_groups.test
 }
