@@ -33,3 +33,31 @@
 * Outputs with modules work as a data transmitter.
 * You can define multiple output blocks.
 
+
+### Terraform variable precedence 
+
+# https://www.env0.com/blog/terraform-variables
+
+
+* 1. -var-file
+* 2. *auto-.tfvars
+* 3. terraform.tfvars
+* 4. ask in cli to provide input
+
+* Terraform uses a specific order of precedence when determining the value of a variable. 
+* If the same variable is assigned multiple values, Terraform will use the value of highest precedence, 
+  overriding any other values. 
+* Below is the precedence order starting from the highest priority to the lowest.
+
+    * Environment variables (TF_VAR_variable_name)
+    * The terraform.tfvars file
+    * The terraform.tfvars.json file
+    * Any .auto.tfvars or .auto.tfvars.json files, processed in lexical order of their filenames.
+    * Any -var and -var-file options on the command line, in the order they are provided.
+    * Variable defaults
+
+
+** Null Resource 
+    * that when you are using this Terraform resource, you are not handling a physical resource in the cloud.
+
+    * The null_resource helps us to execute any command remotely or locally to provisioning any resource or even to create a configuration file or perform some command or scripts to change some configuration. There is no limit to what you can do, which is powerful. 
