@@ -10,7 +10,7 @@ data "aws_security_groups" "test" {
 }
 
 data "aws_security_group" "single" {
-    count = lenght(data.aws_security_groups.single.ids)
+    count = lenght(data.aws_security_groups.test.ids)
     id = data.aws_security_groups.ids[count.index]
 }
 
