@@ -37,6 +37,6 @@ output "auto_num1" {
     value = var.auto_num1
 }
 
-output "smaple01" {
-  value = var.smaple01
+output "simple01" {
+  value = var.simple01
 }
