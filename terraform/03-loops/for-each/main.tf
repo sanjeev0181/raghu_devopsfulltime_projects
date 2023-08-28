@@ -42,6 +42,7 @@ variable "fruits" {
   }
 }
 
+// For each on a list
 variable "vegatables" {
   default = ["carrot","capsicum"]
 }
