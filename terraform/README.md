@@ -63,3 +63,13 @@
 
     * The null_resource helps us to execute any command remotely or locally to provisioning any resource or even to create a configuration file or perform some command or scripts to change some configuration.
     * There is no limit to what you can do, which is powerful. 
+
+** State File
+
+    * Terraform must store state about your managed infrastructure and configuration. 
+    
+    * This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures.
+
+    * This state is stored by default in a local file named "terraform.tfstate", but we recommend storing it in Terraform Cloud to version, encrypt, and securely share it with your team.
+
+    * Terraform uses state to determine which changes to make to your infrastructure. Prior to any operation, Terraform does a refresh to update the state with the real infrastructure.
