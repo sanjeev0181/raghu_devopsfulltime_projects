@@ -57,16 +57,18 @@
     * Variable defaults
 
 
-** Null Resource 
+# Null Resource 
    
     * that when you are using this Terraform resource, you are not handling a physical resource in the cloud.
 
     * The null_resource helps us to execute any command remotely or locally to provisioning any resource or even to create a configuration file or perform some command or scripts to change some configuration.
     * There is no limit to what you can do, which is powerful. 
 
-** State File
+# State File
 
-    ** reference :- https://developer.hashicorp.com/terraform/language/state
+    # reference :- https://developer.hashicorp.com/terraform/language/state
+
+    
 
     * Terraform must store state about your managed infrastructure and configuration. 
     
