@@ -1,3 +1,5 @@
+#https://developer.hashicorp.com/terraform/language/functions/lookup
+
 variable "simple" {
   default = "abcxyz"
 }
