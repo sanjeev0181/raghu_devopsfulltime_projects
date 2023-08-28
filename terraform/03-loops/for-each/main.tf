@@ -41,3 +41,15 @@ variable "fruits" {
     organe = 20
   }
 }
+
+variable "vegatables" {
+  default = ["carrot","capsicum"]
+}
+
+resource "null_resource" "vegatables" {
+  for_each = toset(var.vegatables)
+
+  provisioner "local-exec" {
+    command = "echo Fruit Name - ${each.key}"
+  }
+}
