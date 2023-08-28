@@ -83,11 +83,13 @@
 
 ## https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax
 
-    * You can use provisioners to model specific actions on the local machine or on a remote machine in order to prepare servers or other infrastructure objects for service.
+    * You can use provisioners to model specific actions on the local machine or on a remote machine in 
+    order to prepare servers or other infrastructure objects for service.
 
     ## File Provisioner 
      
-        * The file provisioner copies files or directories from the machine running Terraform to the newly created resource. The file provisioner supports both ssh and winrm type connections.
+        * The file provisioner copies files or directories from the machine running Terraform to the newly created resource. 
+        * The file provisioner supports both ssh and winrm type connections.
 
         # Example usage
 
@@ -124,8 +126,8 @@
         *  The local-exec provisioner invokes a local executable after a resource is created.
         *  This invokes a process on the machine running Terraform, not on the resource. 
         *  See the remote-exec provisioner to run commands on the resource.
-        *  Note that even though the resource will be fully created when the provisioner is run, there is no guarantee that it will be in an operable state - 
-        
+        *  Note that even though the resource will be fully created when the provisioner is run, 
+        there is no guarantee that it will be in an operable state         
         * for example system services such as sshd may not be started yet on compute resources.
 
         # Example usage
