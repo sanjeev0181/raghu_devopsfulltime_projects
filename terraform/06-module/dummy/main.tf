@@ -1,4 +1,4 @@
 #write the submodule folder
-output "dummy" {
+output "dummy_opt" {
     value = "xyz"
 }
