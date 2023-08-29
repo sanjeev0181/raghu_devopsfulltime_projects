@@ -1,3 +1,4 @@
+// main.tf in main moudule
 module "sample" {
   source = "./module"
   input = "xyz"
