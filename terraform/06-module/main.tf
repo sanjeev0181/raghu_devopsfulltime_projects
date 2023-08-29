@@ -2,7 +2,7 @@
 module "sample" {
   source = "./module"
   #input = "xyz"
-  input = module.dummy.dummy_opt
+  input = module.sample1.dummy_opt
 }
 
 module "sample1" {
