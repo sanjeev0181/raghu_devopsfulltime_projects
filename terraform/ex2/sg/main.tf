@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_tls" {
-  name = "allow-tls"
+  name = "allow_tls"
   description = "Allow HTTP and SSH traffic via Terraform"
 
   ingress {
@@ -23,7 +23,7 @@ resource "aws_security_group" "allow_tls" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "allows-tls"
+    Name = "allows_tls"
   }
 }
 
