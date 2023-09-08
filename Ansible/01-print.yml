@@ -1,0 +1,11 @@
+- name: Demo on First playbook
+hosts : all
+tasks: 
+  - name : Print Hello World
+  ansible.buildtin.debug:
+    msg: Hello World
+
+
+# Terminal Running 
+# ansible-playbook -i /tmp/inv all -e  ansible_user=centos -e ansible_password=DevOps321 -m 01-print.yml
+# ansible-pull -i localhosts, -U git clone  url Ansible/01-print.yml

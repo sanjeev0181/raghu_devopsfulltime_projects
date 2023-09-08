@@ -12,6 +12,6 @@ cp /root/raghu_devopsfulltime_projects/shell_script/catalogue.service  /etc/syst
 systemctl daemon-reload
 systemctl enable catalogue 
 systemctl start catalogue
-cp cp /root/raghu_devopsfulltime_projects/shell_script/mongodb-org-5.0.repo  /etc/yum.repos.d/mongodb-org-5.0.repo
+cp  /root/raghu_devopsfulltime_projects/shell_script/mongodb-org-5.0.repo  /etc/yum.repos.d/mongodb-org-5.0.repo
 yum install mongodb-org-shell -y
 mongo --host 18.223.168.228 </app/schema/catalogue.js
