@@ -1,4 +1,11 @@
-- name: Demo on roles
-  hosts: all
-  roles:
-  - sample
+- name: Print Hello World
+  ansible.builtin.debug:
+    msg: Hello from Role Sample
+
+- name: Print Variable from Role
+  ansible.builtin.debug:
+    msg: URL - {{ URL  }}
+
+- name: Print Variable from Play
+  ansible.builtin.debug:
+    msg: URL_PLAY - {{ URL_PLAY}}
