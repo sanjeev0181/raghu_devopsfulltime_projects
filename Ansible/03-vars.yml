@@ -13,3 +13,40 @@
 # quotes are mandatory if values starts with a variables , meaning
 # msg: {{ URL }} <- This requires quoting
 # msg: URL - {{ URL }}  <- This does not requires quoting
+
+
+- name: Demo Task Level Variables
+  hosts: all
+  tasks:
+  - name: Print URL
+    ansible.builtin.debug:
+      msg: URL - {{ URL }}
+    vars:
+      URL: play.example.com
+
+# Only that task have that variable, other tasts connot access it.
+
+
+- name: Load vars from a file
+  hosts: all
+  vars_files:
+    - exvars.yml
+  tasks:
+  - name: Print URL
+    ansible.builtin.debug:
+      msg: URL - {{ URL }}
+
+# vars_files does not support task level, if is for play level only
+
+
+- name: Variable from Roles
+  hosts: all
+  roles:
+    - sample
+
+- name: Variable from Roles
+  hosts: all
+  vars:
+    URL_PLAY: play.example.com  
+  roles:
+    - sample
