@@ -1,4 +1,8 @@
 - name: Demo on roles
-- hosts: all
-- roles:
+  hosts: all
+  roles:
   - sample
+
+
+#absible-playbook -i localhost, 02-roles.yml -e ansible_user=centos -e anisble_password=DevOps321
+
