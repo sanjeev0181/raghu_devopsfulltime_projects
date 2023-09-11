@@ -1,0 +1,15 @@
+# Section : D72-2023-05-06-SESSION-30
+- name: Demo Play Level Variables
+  hosts: all
+  vars:
+    URL: play.example.com
+  tasks:
+  - name: Print URL
+    ansible.builtin.debug:
+      msg: URL - {{ URL }}
+
+# In Ansible variable will be accessed using {{ }}, 
+# Ansible Supports double quotes and single quotes  also ,However quotes are not madatory in all cases
+# quotes are mandatory if values starts with a variables , meaning
+# msg: {{ URL }} <- This requires quoting
+# msg: URL - {{ URL }}  <- This does not requires quoting
