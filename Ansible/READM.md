@@ -103,3 +103,24 @@
 
             *   meta - defines some meta data for this role. See below for more details.
 
+    # Variable Precedence
+
+        * In the following order, variables are prioritized, Order is high to low.
+
+            * Commands line variables
+            * Task Level variables
+            * Variable from files
+            * Play level variable
+            * Inventory variables
+
+    # Variable Precedence while roles are uses.
+
+        * In the following order, variables are prioritized, Order is high to low.
+
+            * Commands line variables
+            * Task Level variables
+            * vars dir from roles
+            * Variable from files
+            * Play level variable
+            * Inventory variables
+            * defaults dir form roles  

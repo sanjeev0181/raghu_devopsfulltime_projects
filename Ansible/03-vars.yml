@@ -50,3 +50,5 @@
     URL_PLAY: play.example.com  
   roles:
     - sample
+
+#absible-playbook -i localhost, 02-roles.yml -e ansible_user=centos -e anisble_password=DevOps321 -e URL = cli.example.com
