@@ -52,3 +52,15 @@
     - sample
 
 #absible-playbook -i localhost, 02-roles.yml -e ansible_user=centos -e anisble_password=DevOps321 -e URL = cli.example.com
+
+
+## refernce_url : https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
+- name: Demo go register variable.
+  hosts: all
+  tasks: 
+    - name: Run uptime shell commands
+      ansible.builtin.shell: uptime
+      register: output
+    - name: Print output
+      ansible.builtin.debug: 
+        msg: '{{ URL }}'
