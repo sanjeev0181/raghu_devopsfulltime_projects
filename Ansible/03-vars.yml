@@ -64,3 +64,5 @@
     - name: Print output
       ansible.builtin.debug: 
         msg: '{{ URL }}'
+
+#absible-playbook -i localhost, 02-roles.yml -e ansible_user=centos -e anisble_password=DevOps321 -e URL = cli.example.com
