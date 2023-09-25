@@ -1,0 +1,7 @@
+#https://docs.ansible.com/ansible/latest/collections/amazon/aws/ssm_parameter_lookup.html#ansible-collections-amazon-aws-ssm-parameter-lookup
+- name: print a parameter
+  hosts: all
+  tasks:
+  - name: print a parameter.
+    ansible.builtin.debug:
+      msg: parameter - {{ lookup('amazon.aws.aws_ssm', 'test.test', region='us-east-1' ) }}
