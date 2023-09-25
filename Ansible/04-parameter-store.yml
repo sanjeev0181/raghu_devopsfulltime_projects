@@ -1,6 +1,7 @@
 #https://docs.ansible.com/ansible/latest/collections/amazon/aws/ssm_parameter_lookup.html#ansible-collections-amazon-aws-ssm-parameter-lookup
 - name: print a parameter
-  hosts: all
+  hosts: localhost
+  connection: local
   tasks:
   - name: print a parameter.
     ansible.builtin.debug:
